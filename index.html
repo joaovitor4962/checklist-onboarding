@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checklist de Onboarding</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="jsPDF/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <img src="img/logo.png" alt="Logo da Empresa" class="logo">
+    <h1>Checklist de Onboarding</h1>
+
+    <input type="text" id="tecnico" placeholder="Nome do Técnico Responsável">
+    <input type="text" id="funcionario" placeholder="Nome do Funcionário Onboardado">
+
+    <div id="checklist">
+      <div class="checklist-item"><input type="checkbox"> Conta de e-mail criada</div>
+      <div class="checklist-item"><input type="checkbox"> Acesso à rede configurado</div>
+      <div class="checklist-item"><input type="checkbox"> Configuração Ad</div>
+      <div class="checklist-item"><input type="checkbox"> Instalação dos softwares</div>
+      <div class="checklist-item"><input type="checkbox"> Instalação da impressora</div>
+      <div class="checklist-item"><input type="checkbox"> Equipamentos entregues</div>
+      <div class="checklist-item"><input type="checkbox"> Treinamento inicial realizado</div>
+      <div class="checklist-item"><input type="checkbox"> Acesso a sistemas concedido</div>
+    </div>
+
+    <button onclick="gerarPDF()">Gerar PDF</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
